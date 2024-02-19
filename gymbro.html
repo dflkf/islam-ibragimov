@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <style>
+    html,
+    body{
+      height: 100%;
+      font-size: 15px;
+      background-color: aliceblue;
+    }
+    .swiper{
+      width: 1000px;
+      height: 100%;
+    }
+    .swiper-slide{
+      text-align: center;
+      font-size: 18px;
+      background-color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-slide img{
+      width: 58%;
+      object-fit: cover;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+      right: 140px !important; 
+      left: auto;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+      left: 140px !important; 
+      right: auto;
+    }
+
+  </style>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="no100 (1).jpg"></div>
+      <div class="swiper-slide"><img src="no100 (2).jpg"></div>
+      <div class="swiper-slide"><img src="no100 (3).jpg"></div>
+      <div class="swiper-slide"><img src="no100 (4).jpg"></div>
+      <div class="swiper-slide"><img src="no100 (5).jpg"></div>
+      <div class="swiper-slide"><img src="no100 (6).jpg"></div>
+      <div class="swiper-slide"><img src="no100 (7).jpg"></div>
+      <div class="swiper-slide"><img src="no100 (8).jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+</html>en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
